@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body class="bg">
+
+<div class="navbar">
+  My Calendar
+  <a href="/logout" style="float:right; color:white; text-decoration:none;">Logout</a>
+</div>
+
+<div class="container">
+
+
+  <div class="card">
+    <h2>Add Event</h2>
+
+    <input id="title" placeholder="Event Title">
+    <input id="start" type="date">
+    <input id="end" type="date">
+
+    <select id="category">
+      <option>College</option>
+      <option>Medical</option>
+      <option>Personal</option>
+      <option>Meeting</option>
+    </select>
+
+    <button onclick="addEvent()">Add Event</button>
+  </div>
+
+ 
+  <div id="calendar"></div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+
+<script src="/static/js/calendar.js"></script>
+
+</body>
+</html>
